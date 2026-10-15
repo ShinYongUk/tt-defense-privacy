@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>T.T: Defense 개인정보 처리방침 · Privacy Policy</title>
-<meta name="description" content="T.T: Defense 개인정보 처리방침 / Privacy Policy">
+<title>Alice: Defense 개인정보 처리방침 · Privacy Policy</title>
+<meta name="description" content="Alice: Defense 개인정보 처리방침 / Privacy Policy">
 <style>
 :root {
   --bg: #fbfaf8;
@@ -33,7 +33,7 @@ body {
   font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif;
 }
 main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
-nav { display: flex; gap: 8px; margin-bottom: 24px; }
+nav { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
 nav a {
   color: var(--accent);
   border: 1px solid var(--line);
@@ -64,44 +64,61 @@ a { color: var(--accent); overflow-wrap: anywhere; }
 <nav aria-label="Language"><a href="#ko" lang="ko">한국어</a><a href="#en" lang="en">English</a></nav>
 
 <section id="ko" lang="ko">
-<h1>T.T: Defense 개인정보 처리방침</h1>
+<h1>Alice: Defense 개인정보 처리방침</h1>
 <p class="date">시행일: 2026년 10월 12일</p>
-<p>YongHyeseung(이하 "개발자")은 T.T: Defense(이하 "게임")를 제공하면서 아래와 같이 개인정보를 처리합니다.</p>
+<p>YongHyeseung(이하 "개발자")은 Alice: Defense(이하 "게임")를 제공하면서 아래와 같이 개인정보를 처리합니다.</p>
 
-<h2>1. 수집 항목</h2>
-<p>게임은 이용자가 '플레이 데이터 수집'에 동의한 경우에만 Unity Analytics로 다음 정보를 수집합니다.</p>
+<h2>1. 수집 항목과 저장 위치</h2>
+<p>게임은 이용자가 '플레이 데이터 수집'에 동의한 경우에만 Unity Analytics로 다음 분석 정보를 수집합니다.</p>
 <ul>
 <li>기기·앱 정보: 무작위로 생성된 설치 식별자, 기기 종류, 운영체제, 게임 버전, 언어 설정, IP 주소(국가·지역 수준의 대략적인 위치 추정에만 사용), iOS의 경우 IDFV</li>
 <li>플레이 기록: 게임 실행·종료 시각과 플레이 시간, 튜토리얼 진행 단계, 판 시작·종료(게임 모드, 챕터, 결과, 도달 스테이지, 소요 시간, 누적 판 수), 스테이지 결과, 주요 기능의 첫 사용 여부</li>
 </ul>
-<p>이름, 이메일, 전화번호, 결제 정보는 수집하지 않습니다. 게임 진행 상황은 이용자의 기기에 저장되며, 개발자가 운영하는 별도 서버로 보내지 않습니다.</p>
+<p>분석 정보와 별도로, 서버 기능을 이용할 때 Unity Gaming Services의 Authentication, Cloud Code, Cloud Save를 통해 다음 정보를 처리합니다. 분석 정보 수집을 끄더라도 계정 인증과 서버 기능에 필요한 데이터 처리는 별개입니다.</p>
+<ul>
+<li>계정 정보: Unity Authentication Player ID와 인증·세션 정보. 외부 계정을 연결하지 않은 게스트 계정에도 서버 계정 식별자가 발급됩니다.</li>
+<li>Android에서 Google Play Games 연결을 이용하는 경우: Google Play Games 계정 식별자와 서버 인증 코드 등 연결·인증에 필요한 정보</li>
+<li>서버 게임 데이터: 재화, 보유 항목, 뽑기 결과와 관련 상태, 패스·VIP·출석 상태, 보상 수령 상태, 중복 처리를 방지하기 위한 요청 식별자·처리 결과와 관련 시각·진행 상태</li>
+<li>서비스 이용에 필요한 네트워크 정보: IP 주소 등 Unity 서비스가 처리하는 접속 정보</li>
+</ul>
+<p>게임 진행 및 설정 정보의 일부는 이용자의 기기에 저장됩니다. 계정과 연결된 서버 게임 데이터는 Cloud Code에서 처리하고 Cloud Save에 저장하므로, 모든 진행 정보가 기기에만 저장되는 것은 아닙니다. 이 안내는 게임의 모든 진행 정보가 서버에 백업·동기화된다는 뜻은 아닙니다.</p>
+<p>게임 계정 기능은 별도의 이름·이메일·전화번호 입력을 요구하지 않습니다. 다만 문의나 삭제 요청을 이메일로 보내면 회신 이메일 주소와 문의 내용, 계정 확인에 필요한 최소한의 정보를 처리합니다.</p>
 
 <h2>2. 이용 목적</h2>
-<p>수집한 정보는 통계 형태로 분석하여 난이도 조정, 튜토리얼과 화면 개선, 오류 파악 등 게임 개선에만 사용합니다. 광고나 맞춤형 마케팅에는 사용하지 않습니다.</p>
+<ul>
+<li>분석 정보: 통계 형태로 분석하여 난이도 조정, 튜토리얼과 화면 개선, 오류 파악 등 게임 개선에 사용합니다. 광고나 맞춤형 마케팅에는 사용하지 않습니다.</li>
+<li>계정·서버 게임 데이터: 게임 계정 인증과 외부 계정 연결, 재화·보유 항목 관리, 뽑기·보상·패스·VIP·출석 기능 제공, 중복 처리 방지와 게임 데이터의 일관성 확인에 사용합니다.</li>
+<li>문의 정보: 문의 응대, 계정 확인, 열람·정정·삭제 요청 처리와 결과 안내에 사용합니다.</li>
+</ul>
 
 <h2>3. 처리 위탁 및 국외 이전</h2>
 <ul>
-<li>수탁자: Unity Technologies (Unity Gaming Services – Analytics)</li>
+<li>수탁자: Unity Technologies (Unity Gaming Services – Analytics, Authentication, Cloud Code, Cloud Save)</li>
 <li>이전 국가: Unity가 운영하는 서버 소재 국가(미국 등)</li>
-<li>이전 항목: 1항의 수집 항목</li>
-<li>이전 시기와 방법: 게임 이용 중 네트워크를 통해 수시 전송(HTTPS 암호화)</li>
-<li>보유 기간: 수집일로부터 13개월 후 자동 삭제</li>
+<li>이전 항목: 각 기능에 필요한 1항의 분석 정보, 계정·인증 정보, 서버 게임 데이터와 접속 정보</li>
+<li>이전 시기와 방법: 해당 기능 이용 중 네트워크를 통해 전송(HTTPS 암호화)</li>
+<li>보유·삭제: 분석 정보와 계정·서버 게임 데이터를 구분하여 4항에 안내합니다.</li>
 <li>Unity 개인정보 처리방침: <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">https://unity.com/legal/game-player-and-app-user-privacy-policy</a></li>
 </ul>
+<p>Google Play Games 연결을 이용하는 경우 Google 서비스의 정보 처리는 <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>도 적용됩니다.</p>
 
 <h2>4. 보유 및 파기</h2>
-<p>수집된 정보는 13개월 동안 보관한 뒤 자동으로 삭제됩니다. 이용자가 동의를 철회하면 수집을 즉시 중단하고, 저장된 정보의 삭제를 Unity에 요청합니다.</p>
+<p>Unity Analytics로 수집된 분석 정보는 기존 안내와 같이 수집일로부터 13개월 동안 보관한 뒤 자동으로 삭제됩니다. 이용자가 분석 정보 수집 동의를 철회하면 수집을 중단하고, 서비스 연결이 준비되면 저장된 분석 정보의 삭제를 Unity에 요청합니다.</p>
+<p>Unity Authentication 계정과 Cloud Save 서버 게임 데이터는 분석 정보와 별도로 관리·삭제됩니다. 분석 정보 수집 동의 철회나 분석 데이터 삭제 요청만으로 게임 계정과 서버 게임 데이터 전체가 삭제되는 것은 아닙니다.</p>
+<p>삭제 대상은 게임 계정과 연결된 서버 저장 데이터(재화, 보유 항목, 뽑기·패스·VIP·출석 상태 등), 관련 개인정보 및 연결된 분석 데이터입니다. 삭제된 계정과 게임 데이터는 복구할 수 없습니다. Google 계정 자체는 삭제되지 않습니다.</p>
+<p>삭제 요청을 받으면 본인 확인 등 필요한 절차를 거쳐 지체 없이 처리하며, 요청일로부터 10일 이내에 처리 결과를 안내합니다. 법령상 보관이 필요한 정보는 해당 법령에서 정한 기간 동안 보관하고, 그 항목과 근거를 안내합니다.</p>
 
-<h2>5. 이용자의 권리</h2>
-<ul>
-<li>게임 설정의 '개인정보' 항목에서 '플레이 데이터 수집'을 끄면 언제든 동의를 철회할 수 있습니다. 이때 지금까지 수집된 정보의 삭제도 함께 요청됩니다.</li>
-<li>그 밖의 열람·정정·삭제 요청은 아래 연락처로 보내 주세요.</li>
-</ul>
+<h2>5. 이용자의 권리와 계정 삭제 요청</h2>
+<p>게임 설정의 '개인정보' 항목에서 '플레이 데이터 수집'을 끄면 언제든 분석 정보 수집 동의를 철회할 수 있습니다. 이전에 동의하고 수집을 허용한 상태에서 끄면 분석 데이터 삭제도 요청됩니다. 서비스가 준비되지 않은 경우 삭제 요청은 준비된 뒤 전송됩니다.</p>
+<p>계정과 관련 데이터 삭제를 원하시면 <a href="mailto:dyddyddnr@naver.com?subject=Alice%3A%20Defense%20%EA%B3%84%EC%A0%95%20%EC%82%AD%EC%A0%9C%20%EC%9A%94%EC%B2%AD">dyddyddnr@naver.com</a>으로 이메일을 보내 주세요. 제목은 ‘Alice: Defense 계정 삭제 요청’으로 하고, 이용 플랫폼·로그인 방식·알고 있는 경우 Player ID를 적어 주세요. Player ID를 모르거나 앱을 삭제한 경우에도 이메일로 문의할 수 있습니다. 계정 확인에 필요한 최소한의 추가 정보는 개별 안내합니다. 비밀번호·인증번호·로그인 토큰·신분증은 보내지 마세요.</p>
+<p>전체 안내: <a href="account-deletion.html">Alice: Defense 계정 및 데이터 삭제 요청</a></p>
+<p>그 밖의 열람·정정 요청은 아래 연락처로 보내 주세요.</p>
 
 <h2>6. 아동</h2>
 <p>만 14세 미만 이용자는 법정대리인의 동의를 받은 경우에만 플레이 데이터 수집에 동의할 수 있습니다.</p>
 
 <h2>7. Steam 버전</h2>
+<p>Steam 로그인에서는 Steam 계정 식별자와 인증 티켓을 Unity Authentication을 통해 처리합니다. Steam 보유 항목 연결 기능을 이용하는 경우 연결된 Steam 식별자, 보유 항목 식별자 및 지급 처리 기록을 Cloud Code와 Cloud Save에서 처리합니다.</p>
 <p>Steam 버전은 챕터별 리더보드 등 Steamworks 기능을 사용합니다. 리더보드에는 Steam 계정 이름과 기록(도달 스테이지, 소요 시간)이 표시되며, 이 정보는 Valve가 <a href="https://store.steampowered.com/privacy_agreement/">Valve 개인정보 처리방침</a>에 따라 처리합니다.</p>
 
 <h2>8. 개인정보 보호책임자</h2>
@@ -115,44 +132,61 @@ a { color: var(--accent); overflow-wrap: anywhere; }
 </section>
 
 <section id="en" lang="en">
-<h1>T.T: Defense Privacy Policy</h1>
+<h1>Alice: Defense Privacy Policy</h1>
 <p class="date">Effective date: October 12, 2026</p>
-<p>YongHyeseung ("we") processes personal information as described below when providing T.T: Defense (the "Game").</p>
+<p>YongHyeseung ("we") processes personal information as described below when providing Alice: Defense (the "Game").</p>
 
-<h2>1. Data we collect</h2>
-<p>Only if you agree to "Gameplay Data Collection," the Game collects the following through Unity Analytics:</p>
+<h2>1. Data we process and where it is stored</h2>
+<p>Only if you agree to "Gameplay Data Collection," the Game collects the following analytics data through Unity Analytics:</p>
 <ul>
 <li>Device and app information: a randomly generated installation ID, device model, operating system, game version, language setting, IP address (used only to estimate an approximate country or region), and IDFV on iOS</li>
 <li>Gameplay records: session start and end times and play time, tutorial progress, run start and end (game mode, chapter, result, stage reached, duration, number of runs played), stage results, and first use of main features</li>
 </ul>
-<p>We do not collect your name, email address, phone number, or payment information. Your game progress is saved on your device and is not sent to any server operated by us.</p>
+<p>Separately from analytics, server features process the following data through Unity Gaming Services Authentication, Cloud Code, and Cloud Save. Turning off analytics collection is separate from the data processing needed for account authentication and server features.</p>
+<ul>
+<li>Account information: the Unity Authentication Player ID and authentication and session information. Guest accounts without an external account connection also receive a server account identifier.</li>
+<li>If you use Google Play Games linking on Android: the Google Play Games account identifier, server authentication code, and other information needed for linking and authentication</li>
+<li>Server game data: currencies, owned items, draw results and related state, pass, VIP and attendance state, reward claim state, and request identifiers, processing results, and related timing and progress state used to prevent duplicate processing</li>
+<li>Network information needed to use the services: connection information such as IP addresses processed by Unity services</li>
+</ul>
+<p>Some game progress and settings are stored on your device. Server game data associated with an account is processed by Cloud Code and stored in Cloud Save, so not all progress information is stored only on your device. This does not mean that all game progress is backed up or synchronized to the server.</p>
+<p>The game account features do not require you to separately enter a name, email address, or phone number. If you email an inquiry or deletion request, we process your reply email address, the contents of your request, and the minimum information needed to verify the account.</p>
 
-<h2>2. How we use it</h2>
-<p>We analyze the data in aggregate only to improve the Game, such as adjusting difficulty, improving the tutorial and screens, and finding errors. We do not use it for advertising or targeted marketing.</p>
+<h2>2. How we use data</h2>
+<ul>
+<li>Analytics data: analyzed in aggregate to improve the Game, such as adjusting difficulty, improving the tutorial and screens, and finding errors. We do not use it for advertising or targeted marketing.</li>
+<li>Account and server game data: to authenticate game accounts and link external accounts, manage currencies and owned items, provide draw, reward, pass, VIP and attendance features, prevent duplicate processing, and check game data consistency.</li>
+<li>Inquiry information: to respond to inquiries, verify accounts, handle access, correction and deletion requests, and communicate the outcome.</li>
+</ul>
 
 <h2>3. Service provider and international transfer</h2>
 <ul>
-<li>Provider: Unity Technologies (Unity Gaming Services – Analytics)</li>
+<li>Provider: Unity Technologies (Unity Gaming Services – Analytics, Authentication, Cloud Code, Cloud Save)</li>
 <li>Countries: where Unity operates its servers (including the United States)</li>
-<li>Data: the items listed in Section 1</li>
-<li>When and how: sent over the network while you play (encrypted with HTTPS)</li>
-<li>Retention: automatically deleted 13 months after collection</li>
+<li>Data: the analytics data, account and authentication information, server game data, and connection information listed in Section 1, as needed for each feature</li>
+<li>When and how: sent over the network when the relevant features are used (encrypted with HTTPS)</li>
+<li>Retention and deletion: analytics data is distinguished from account and server game data in Section 4.</li>
 <li>Unity's privacy policy: <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">https://unity.com/legal/game-player-and-app-user-privacy-policy</a></li>
 </ul>
+<p>If you use Google Play Games linking, Google's processing of information for its services is also covered by the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 
 <h2>4. Retention and deletion</h2>
-<p>Collected data is kept for 13 months and then deleted automatically. If you withdraw consent, collection stops immediately and we request that Unity delete the stored data.</p>
+<p>As previously stated, analytics data collected through Unity Analytics is kept for 13 months after collection and then deleted automatically. If you withdraw analytics consent, collection stops and we request deletion of the stored analytics data from Unity once the service connection is ready.</p>
+<p>Unity Authentication accounts and Cloud Save server game data are managed and deleted separately from analytics data. Withdrawing analytics consent or requesting analytics data deletion does not by itself delete the game account and all server game data.</p>
+<p>Deletion covers the game account and its associated server-stored data (including currencies, owned items, and draw, pass, VIP, and attendance state), related personal information, and linked analytics data. Deleted accounts and game data cannot be recovered. Your Google account itself will not be deleted.</p>
+<p>After receiving a deletion request, we will process it without delay following the necessary steps, including identity verification, and inform you of the outcome within 10 days of the request date. Information that must be retained by law will be kept for the period required by the applicable law, and we will explain which information is retained and the legal basis.</p>
 
-<h2>5. Your rights</h2>
-<ul>
-<li>You can withdraw consent at any time by turning off "Gameplay Data Collection" under "Privacy" in the Game's Settings. This also requests deletion of the data collected so far.</li>
-<li>For other requests to access, correct, or delete your data, contact us using the details below.</li>
-</ul>
+<h2>5. Your rights and account deletion requests</h2>
+<p>You can withdraw analytics consent at any time by turning off "Gameplay Data Collection" under "Privacy" in the Game's Settings. Turning it off after previously granting consent and allowing collection also requests analytics data deletion. If the service is not ready, the deletion request is sent once it is ready.</p>
+<p>To request deletion of your account and associated data, email <a href="mailto:dyddyddnr@naver.com?subject=Alice%3A%20Defense%20account%20deletion%20request">dyddyddnr@naver.com</a>. Use the subject “Alice: Defense account deletion request” and include your platform, sign-in method, and Player ID if you know it. You can contact us by email even if you do not know your Player ID or have uninstalled the app. We will individually advise you of any minimal additional information needed to verify your account. Do not send passwords, verification codes, sign-in tokens, or identity documents.</p>
+<p>Full instructions: <a href="account-deletion.html">Alice: Defense account and data deletion request</a></p>
+<p>For other access or correction requests, contact us using the details below.</p>
 
 <h2>6. Children</h2>
 <p>Users under the age of 14 may agree to gameplay data collection only with the consent of a parent or legal guardian.</p>
 
 <h2>7. Steam version</h2>
+<p>Steam sign-in also processes the Steam account identifier and authentication ticket through Unity Authentication. When Steam inventory linking is used, the associated Steam identifier, owned item identifiers, and grant processing records are processed through Cloud Code and Cloud Save.</p>
 <p>The Steam version uses Steamworks features such as chapter leaderboards. Leaderboards show your Steam account name and your records (stage reached and duration). This information is handled by Valve under the <a href="https://store.steampowered.com/privacy_agreement/">Valve Privacy Policy</a>.</p>
 
 <h2>8. Privacy contact</h2>
@@ -167,3 +201,4 @@ a { color: var(--accent); overflow-wrap: anywhere; }
 </main>
 </body>
 </html>
+
